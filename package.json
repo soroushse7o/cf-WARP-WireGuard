@@ -1,0 +1,19 @@
+{
+  "name": "warp-wireguard",
+  "version": "2.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "build": "node scripts/build.mjs",
+    "deploy": "wrangler deploy",
+    "deploy:pages": "npm run build && wrangler pages deploy dist --project-name warp-wireguard",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
